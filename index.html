@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Portifolio</title>
+    <!-- <script src="ZACCHPORTIFOLIO/JAVASCRIPTS/web.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="ZACCHPORTIFOLIO/bootstrap.min.css"> -->
+    <!-- <script src="ZACCHPORTIFOLIO/jquery.min.js"></script> -->
+    <!-- <script src="ZACCHPORTIFOLIO/bootstrap.bundle.min.js"></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/ZACCHPORTIFOLIO/portifolio.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+        <div class="logo">Zacch<span>Tech</span></div>
+        
+        <nav class="nav-links">
+           <a href="#">Home</a>
+          <a href="#about-me">About</a>
+          <a href="#myservice">Service</a>
+          <a href="#myskill">Skills</a>
+          <a href="#myproject">Project</a>
+          <a href="#mycontact">Contact</a>
+          <a href="#">My Blog</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+    <!-- CAROSEL SECTION -->
+    <article>
+      <div
+        id="myCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/ZACCHPORTIFOLIO/images/pictu1.png" alt="Slide 1" />
+            <div class="carousel-caption text-start">
+              <h2>Hello, I'm Alade Zaccheous Kehinde</h2>
+              <p>
+                I build clean, responsive interfaces using React, HTML, CSS and
+                JavaScript — turning ideas into smooth user experiences.
+              </p>
+              <a class="btn" href="#projects">Hire Me</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/ZACCHPORTIFOLIO/images/Tech and Tradition at Sunset.png" alt="Slide 2" />
+            <div class="carousel-caption text-start">
+              <h2>I'm Alade Zaccheous</h2>
+              <p>
+                I build Modern websites, real results. I ship projects, learn fast, and
+                grow through consistency and hustle.
+              </p>
+              <a class="btn" href="#about">About Me</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/ZACCHPORTIFOLIO/images/zacchimage.png" alt="Slide 3" />
+            <div class="carousel-caption text-start">
+              <h2>Projects & Skills</h2>
+              <p>
+                I specialize in web dev, Python and UI design. Share your
+                project and let's build something great together.
+              </p>
+              <a class="btn" href="#contact">Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+          aria-label="Previous"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+          aria-label="Next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </article>
+
+    <!-- ABOUT ME -->
+
+    <div class="about-container" id="about-me">
+      <h2>About Me</h2>
+      <div class="display">
+        <div class="pic2">
+          <img src="/ZACCHPORTIFOLIO/images/pictu2.png" alt="mylogo" id="pic2" />
+        </div>
+        <div class="about-section">
+          <h1>I am Professional Web Developer</h1>
+          <p>
+            I started my coding journey from scratch and quickly discovered the
+            thrill of <br />building projects that solve real problems. From
+            HTML and CSS to JavaScript and Python,<br />
+            I'm constantly learning and growing. I design and develop service
+            for customers<br />
+            specializing creating responsive, stylish, and functionality of
+            Modern websites, web services.
+          </p>
+
+          <div id="about-Btn">
+            <a href="https://vercel.com/zacchtechs-projects" target="_blank">My Projects</a>
+            <button id="about-Btn2" onclick="btn()">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT CONTAINER -->
+      <div class="what">
+        <h2>What I do?</h2>
+      <div id="what">
+        <div class="p">
+          I specialize in designing user experiences, crafting <br />
+          engaging interfaces, and building robust web applications<br />
+          that deliver value and usability.
+           </div>
+          <div class="span">
+            My appraoch combines creativity and technical expertise<br />
+            to deliver solutions that are both visually appealing and<br />
+            highly functional for users.</div
+          >
+       
+      </div>
+      </div>
+
+      <div class="expirence">
+        <div id="expirence">
+          <div id="exp">
+          <h1>User Experince (UX)</h1>
+          <p>
+            I design intuitive and enjoyable experinces by understanding user
+            needs.
+            conducting research, and creating wiferames and prototypes that
+            enchance usability.
+          </p>
+          </div>
+        </div>
+
+        <div id="expirence">
+          <div id="exp">
+          <h1>User Interface (UI)</h1>
+          <p>
+            I cratf visually appealing and consistent interfaces, focusing on
+            layout,
+            color, and typography to ensure a seamless and engaging user
+            journey.
+          </p>
+        </div>
+        </div>
+
+
+        <div id="expirence">
+          <div id="exp">
+          <h1>Web Development</h1>
+          <p>
+            I build responsive and high-performance web applications using
+            modern
+            technologies, ensuring accessibility, scalability, and
+            maintainability.
+          </p>
+        </div>
+        </div>
+      </div>
+  
+
+    <!-- SERVICE CONTAINER -->
+
+    <div>
+      <div class="service" id="myservice">
+        <h2>
+          Service We Provide to<br />
+          <span id="business">Elevate Your Business</span>
+        </h2>
+
+        <div class="business-service">
+          <div class="web-container">
+            <h1>Website Development</h1>
+            <p>
+             I build Mordern responsive website with react js, node js<br>
+              and cutting edge technology
+            </p>
+            <ul>
+              <li>React & Node.js</li>
+              <li>Responsive design</li>
+              <li>Performance focuses</li>
+            </ul>
+          </div>
+
+          <div class="web-container">
+            <h1>Mobile Development</h1>
+            <p>
+            I build web   Cross plaftform mobile apps deliver exceptional<br>
+              user expirences.
+            </p>
+            <ul>
+              <li>React Native</li>
+              <li>iOS & Andriod</li>
+              <li>App Store Ready</li>
+            </ul>
+          </div>
+
+          <div class="web-container">
+            <h1>Backend Development</h1>
+            <p>
+             I build Scalable server-side solution,<br>
+              database and APIs.
+            </p>
+            <ul>
+              <li>Node.js & Express</li>
+              <li>Database Design</li>
+              <li>API Development</li>
+            </ul>
+          </div>
+
+          <div class="web-container">
+            <h1>Full Stack Development</h1>
+            <p>
+             I build Mordern responsive website with  react.js,  node.js,<br>
+             and cutting edge technology.
+            </p>
+            <ul>
+              <li>React & Node.js</li>
+              <li>Responsive Design</li>
+              <li>Performance Focuses</li>
+            </ul>
+          </div>
+
+          <div class="web-container">
+            <h1>Python Developer</h1>
+            <p>
+            Building scalable server-side solutions,high-performance APIs,<br>
+           secure database-driven applications for modern businesses.<br>
+            </p>
+            <ul>
+              <li>Python OOP Development</li>
+              <li>Tkinter GUI Applications</li>
+              <li>Django Web Development</li>
+              <li>API Development & Integration</li>
+            </ul>
+          </div>
+
+          <div class="web-container">
+            <h1>Book Author</h1>
+            <p>
+              I specializing in Self-Help, Motivation, and Technology.<br>
+              I craft books that inspire,  educate, and empower readers,<br>
+               and publish them globally on Amazon KDP.
+            </p>
+            <ul>
+              <li>Self Help</li>
+              <li>Motivational</li>
+              <li>Book Publisher</li>
+              <li>Technology Hubs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <!-- PROJECTS SECTION -->
+ <div class="container" id="myproject">
+    <div id="projects">
+    
+        <h1>My Projects</h1>
+        <p>
+          Here's a Selection of my recent work, showcasing my skills in<br />
+          Creating user centric and visually appealing Interface
+        </p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="/ZACCHPORTIFOLIO/images/calculator.png"
+              alt="SIWES Tracker"
+            />
+            <h3>Tkinter-Gui-Calculator</h3>
+            <p>
+              A simple calculator application developed using Python's Tkinter
+              GUI library.
+            </p>
+            <div class="links">
+              <a href="https://siwes-tracker.onrender.com" target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a
+                href="https://github.com/ZacchTech/Tkinter-Gui-Calculator"
+                target="_blank"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="/ZACCHPORTIFOLIO/images/courses web page 3 - Copy.png"
+              alt="Todo App"
+            />
+            <h3>Todo App</h3>
+            <p>Task manager with localStorage</p>
+            <div class="links">
+              <a href="#" target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="/ZACCHPORTIFOLIO/images/my social link - Copy.png"
+              alt="Todo App"
+            />
+            <h3>Frontend Mentor Social links profile Challenge</h3>
+            <p>
+              A responsive social links profile built with HTML and CSS Flexbox
+              customized with my personal brand.
+            </p>
+            <div class="links">
+              <a
+                href="https://frontend-mentor-social-links-profil-chi.vercel.app/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a
+                href="https://github.com/ZacchTech/Frontend-Mentor---Social-links-profile--Challenge"
+                target="_blank"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="/ZACCHPORTIFOLIO/images/Screenshot 2025-12-01 114842 - Copy.png"
+              alt="Todo App"
+            />
+            <h3>Bible Generator with HTML CSS & JavaScript</h3>
+            <p>A responsive random generator that generate bible randomly.</p>
+            <div class="links">
+              <a
+                href="https://daily-bread-randomizer.vercel.app/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a
+                href="https://github.com/ZacchTech/DailyBread-Randomizer"
+                target="_blank"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/ZACCHPORTIFOLIO/images/scancode.png" alt="Todo App" />
+            <h3>Frontend Mentor Blog preview card</h3>
+            <p>I built Blog Preview Card with Flexbox and Grid</p>
+            <div class="links">
+              <a
+                href="https://blog-preview-card-with-flexbox-grid.vercel.app/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a
+                href="https://github.com/ZacchTech/Frontend-Mentor--Blog-preview-card"
+                target="_blank"
+                ><i class="fab fa-github"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="/ZACCHPORTIFOLIO/images/QR.jpeg" alt="Weather App" />
+            <h3>Frontend Mentor QR Code Component Challenge</h3>
+            <p>
+              I Design QR Code Component using margin,padding and border-radius
+            </p>
+            <div class="links">
+              <a
+                href="https://frontend-mentor-qr-code-component-c.vercel.app/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i> Live</a
+              >
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+     
+    </div>
+     </div>
+
+    <hr>
+
+    <!--MY DETAILS  -->
+    <div class="mydetails">
+      <h1>My <span>Details</span></h1>
+      <div id="my">
+        <img
+          src="/ZACCHPORTIFOLIO/images/Tech and Tradition at Sunset.png"
+          id="detailsphoto"
+        />
+        <!-- PHONE -->
+        <div class="phone">
+          <div>Name: Alade Zaccheous Kehinde</div>
+          <div>Date of birth: November 18</div>
+          <div>Email: aladezaccheous52@gmail.com</div>
+          <div>Phone: +12349161302024</div>
+          <h3><span>10</span> Project Complete</h3>
+          <a href="#" target="_blank" id="details-Btn">Download Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCUSSION SECTION -->
+    <div class="discuss-container">
+      <div id="discuss">
+        <h1>
+          Do you have project Ideal?<br /><span>Lets discuss your project</span>
+        </h1>
+        <p>
+          I'm always open to discussing new projects and creative ideals.<br />
+          Let's connect and build something amazing together
+        </p>
+        <a href="#">Let's work together </a>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION  -->
+    <div class="contact-section" id="mycontact">
+      <h3>Contact Us</h3>
+      <div class="contact-container">
+        <div id="address">
+          <h1>Addres</h1>
+          <span>Oroki Area Oyo</span>
+          <h1>Contact</h1>
+          <span>Phone: +12349161302024</span>
+          <h1>Open Time</h1>
+          <span>Monday-Saturday: always available Remotely </span>
+          <h1>Stay Connected</h1>
+        </div>
+        <form
+          action="https://formsubmit.co/aladezaccheous52@gmail.com"
+          method="POST"
+        >
+          <p>
+            I'm always open to discusing product design work or partnership
+            opportunities
+          </p>
+          Name:
+          <input type="text" name="name" placeholder="Your Name" required />
+          Location:
+          <input type="text" name="text" />
+          Email:
+          <input type="email" name="email" placeholder="Your Email" required />
+          Phone:
+          <input type="text" name="_subject" />
+          Budget:
+          <input type="price" name="price" />
+          Message Us:
+          <textarea
+            name="message"
+            placeholder="Write your message.."
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MY SKILLS -->
+
+    <div class="skill" id="myskill">
+      <h1>My<span>Skills</span></h1>
+
+      <section class="skills" id="skills">
+        <div class="skill">
+          <label>HTML<span>100%</span></label>
+          <div class="bar">
+            <div class="bar-fill" data-width="100"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>CSS <span>85%</span></label>
+          <div class="bar">
+            <div class="bar-fill" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>Responsive Design <span>75%</span></label>
+          <div class="bar">
+            <div class="bar-fill" data-width="75"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>Python <span>25%</span></label>
+          <div class="bar">
+            <div class="bar-fill" data-width="25"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>Tkinter GUI <span>30%</span></label>
+          <div class="bar">
+            <div class="bar-fill" data-width="30"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>Django <span>10%</span></label>
+          <div class="bar">
+            <div class="bar-fill" data-width="10"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- NAVIGATION SECTION -->
+    <div class="navigation-container">
+      <div id="design">
+        <p>
+          We design for independent and conenience.<br />
+          We create a clean and user frindely website for business.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="navcon">
+        <div id="navigation">
+          <h1>Navigation</h1>
+          <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#about-me">About</a>
+          <a href="#myservice">Service</a>
+          <a href="#myskill">Skills</a>
+          <a href="#myproject">Project</a>
+          <a href="#mycontact">Contact</a>
+          <a href="#">My Blog</a>
+          </div>
+        </div>
+        <!-- CONTACT -->
+        <div id="contact">
+          <h1>Contact</h1>
+          <h3>Address</h3>
+          <p>Oroki Area Oyo</p>
+          <h1>Contact</h1>
+          <h4>Phone:</h4>
+          <p>+2349161302024</p>
+          <h4>Email:</h4>
+          <p>aladezaccheous52@gmail.com</p>
+          <h1>Open Time</h1>
+          <h4>Monday-Saturday:</h4>
+          <p>always available</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="hr">
+      <hr />
+    </div>
+    <footer>Copyright @ 2025 ZacchTech.All rights reserved</footer>
+
+    <!-- JavaScript -->
+    <script>
+function btn(){
+const aboutbtn=document.getElementById('about-Btn2, ');
+window.alert("Thank's Your Downlad Is In Progress")
+
+}
+
+
+      <!-- CAROUSEL JS -->
+      var bars = document.querySelectorAll(".bar-fill");
+      var section = document.getElementById("skills");
+
+      function fillBars() {
+        for (var i = 0; i < bars.length; i++) {
+          var bar = bars[i];
+          var percent = bar.getAttribute("data-width");
+          bar.style.width = percent + "%";
+        }
+      }
+
+      function resetBars() {
+        for (var i = 0; i < bars.length; i++) {
+          bars[i].style.width = "0%";
+        }
+      }
+
+
+    </script>
+  </body>
+</html>
