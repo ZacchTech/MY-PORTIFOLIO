@@ -47,13 +47,14 @@ font-weight: bold;
     transition: background-color 0.3s ease;
     border-radius: 4px;
     margin: 0 5px;
+    padding-right: 2rem;
 }
 
 .nav-links a:hover {
 background-color: black; 
 padding: 15px;
 color: white;
-opacity: 0.3;
+opacity: 0.1;
 transition: 2s;
 
 }
@@ -376,6 +377,7 @@ margin-top: -10rem;
 
 #what .p{
 color: white;
+margin-left: 2rem;
 }
 
 
@@ -449,6 +451,8 @@ display:block;
 border: 2px gold solid;
 box-shadow:3px 3px 2px gray, -2px -1px 3px gold;
 padding-bottom: 50px;
+margin-left: 20px;
+margin-right: 25px;
 
 }
 
@@ -490,10 +494,10 @@ overflow: hidden;
 box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 transition: all 0.4s ease;
 text-align: left;
-animation-duration: 5s;
-animation: scrolling  3s ease-out 1ms infinite alternate forwards;
-animation-timing-function: view;
-animation: fadeIn 3s ease-in-out 2ms forwards;
+/* animation-duration: 5s; */
+/* animation: scrolling  3s ease-out 1ms infinite alternate forwards; */
+/* animation-timing-function: view; */
+animation: fadeIn 10s ease-in-out 4ms  forwards;
 
 }
 
@@ -584,13 +588,24 @@ box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
 }
 
 .links a {
-  color: #00d4ff;
-  text-decoration: none;
-  font-weight: 500;
+color: #00d4ff;
+text-decoration: none;
+font-weight: 500;
+position: relative;
+font-weight: bold;
+left: 20px;
+padding: 10px;
+border-radius:7px;
+border: none;
+box-shadow: 2px 3px 10px grey , -15px -5px 30px whitesmoke;
+
 }
 
 .links a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  padding: 15px;
+  opacity: 0.3;
+  color: black;
 }
 
 

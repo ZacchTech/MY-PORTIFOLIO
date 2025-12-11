@@ -57,6 +57,7 @@
         "list": "off"
       }
     ],
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "meta-viewport": "off"
   }
 }
