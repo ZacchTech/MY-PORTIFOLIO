@@ -484,20 +484,17 @@ grid-template-columns: 1fr  1fr 1fr;
 grid-template-rows: auto;
 gap: 2rem;
 margin: auto;
-
+overflow: hidden;
 }
 
-.project-card {
-background:rgb(166, 162, 162);
+.project-card{
+animation: fadeIn 5s ease-in-out 4ms forwards;
 border-radius: 10px;
-overflow: hidden;
 box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 transition: all 0.4s ease;
 text-align: left;
-/* animation-duration: 5s; */
-/* animation: scrolling  3s ease-out 1ms infinite alternate forwards; */
-/* animation-timing-function: view; */
-animation: fadeIn 10s ease-in-out 4ms  forwards;
+cursor: pointer;
+background:rgb(166, 162, 162);
 
 }
 
@@ -526,23 +523,6 @@ animation: fadeIn 10s ease-in-out 4ms  forwards;
     top:0px;}
 }
 
-@keyframes scrolling{
-0%{
-  transform: scale(0.5);
-  opacity: 0;
-}
-
-20%{
-  transform: scale(0.8);
-  opacity: 0.5;
-}
-
-40%{
-  transform: scale(1.0);
-  opacity: 1;
-}
-
-}
 .container h1{
 font-size: 50px;
 color: gold;
